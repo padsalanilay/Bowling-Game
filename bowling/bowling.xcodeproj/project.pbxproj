@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99293A58269BC688007BC601 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99293A57269BC688007BC601 /* GameViewModel.swift */; };
+		99293A5A269BDB8B007BC601 /* GameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99293A59269BDB8B007BC601 /* GameDelegate.swift */; };
+		99B40B79269B541300BDC487 /* GameView+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B40B78269B541300BDC487 /* GameView+CollectionView.swift */; };
+		99B40B7C269B71DD00BDC487 /* GameError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B40B7B269B71DD00BDC487 /* GameError.swift */; };
+		99B40B7E269B71EE00BDC487 /* ShotError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B40B7D269B71EE00BDC487 /* ShotError.swift */; };
+		99B40B80269BB87A00BDC487 /* PlayerFrameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B40B7F269BB87A00BDC487 /* PlayerFrameViewModel.swift */; };
+		99F5BFF42698F1D3007D547F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5BFF32698F1D3007D547F /* AppDelegate.swift */; };
+		99F5BFF62698F1D3007D547F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5BFF52698F1D3007D547F /* SceneDelegate.swift */; };
+		99F5BFF82698F1D3007D547F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5BFF72698F1D3007D547F /* GameViewController.swift */; };
+		99F5BFFB2698F1D3007D547F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F5BFF92698F1D3007D547F /* Main.storyboard */; };
+		99F5BFFE2698F1D3007D547F /* bowling.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99F5BFFC2698F1D3007D547F /* bowling.xcdatamodeld */; };
+		99F5C0002698F1DB007D547F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F5BFFF2698F1DB007D547F /* Assets.xcassets */; };
+		99F5C0032698F1DB007D547F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F5C0012698F1DB007D547F /* LaunchScreen.storyboard */; };
+		99F5C00E2698F1DB007D547F /* bowlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5C00D2698F1DB007D547F /* bowlingTests.swift */; };
+		99F5C0192698F1DB007D547F /* bowlingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5C0182698F1DB007D547F /* bowlingUITests.swift */; };
+		99F5C02D2698F3D8007D547F /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5C02C2698F3D8007D547F /* Shot.swift */; };
+		99F5C02F2698F40E007D547F /* PinsKnokedDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5C02E2698F40E007D547F /* PinsKnokedDown.swift */; };
+		99F5C0452698F605007D547F /* ShotsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5C0422698F605007D547F /* ShotsCollectionView.swift */; };
+		99F5C0462698F605007D547F /* ShotsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5C0432698F605007D547F /* ShotsCollectionViewCell.swift */; };
+		99F5C0472698F605007D547F /* ShotsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F5C0442698F605007D547F /* ShotsCollectionViewCell.xib */; };
+		99F5C04A2698F8DE007D547F /* PlayerFramesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5C0492698F8DE007D547F /* PlayerFramesCollectionView.swift */; };
+		99F5C04C2698FADB007D547F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5C04B2698FADA007D547F /* Player.swift */; };
+		99F5C0502698FB36007D547F /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5C04F2698FB36007D547F /* Frame.swift */; };
+		99F5C0532698FBFE007D547F /* PlayerFrameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5C0512698FBFE007D547F /* PlayerFrameCollectionViewCell.swift */; };
+		99F5C0542698FBFE007D547F /* PlayerFrameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F5C0522698FBFE007D547F /* PlayerFrameCollectionViewCell.xib */; };
+		99F5C0562698FE69007D547F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F5C0552698FE68007D547F /* Game.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99F5C00A2698F1DB007D547F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F5BFE82698F1D1007D547F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99F5BFEF2698F1D2007D547F;
+			remoteInfo = bowling;
+		};
+		99F5C0152698F1DB007D547F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F5BFE82698F1D1007D547F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99F5BFEF2698F1D2007D547F;
+			remoteInfo = bowling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99293A57269BC688007BC601 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		99293A59269BDB8B007BC601 /* GameDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDelegate.swift; sourceTree = "<group>"; };
+		99B40B78269B541300BDC487 /* GameView+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameView+CollectionView.swift"; sourceTree = "<group>"; };
+		99B40B7B269B71DD00BDC487 /* GameError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameError.swift; sourceTree = "<group>"; };
+		99B40B7D269B71EE00BDC487 /* ShotError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotError.swift; sourceTree = "<group>"; };
+		99B40B7F269BB87A00BDC487 /* PlayerFrameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerFrameViewModel.swift; sourceTree = "<group>"; };
+		99F5BFF02698F1D3007D547F /* bowling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bowling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99F5BFF32698F1D3007D547F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99F5BFF52698F1D3007D547F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		99F5BFF72698F1D3007D547F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		99F5BFFA2698F1D3007D547F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99F5BFFD2698F1D3007D547F /* bowling.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bowling.xcdatamodel; sourceTree = "<group>"; };
+		99F5BFFF2698F1DB007D547F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99F5C0022698F1DB007D547F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99F5C0042698F1DB007D547F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F5C0092698F1DB007D547F /* bowlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bowlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99F5C00D2698F1DB007D547F /* bowlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bowlingTests.swift; sourceTree = "<group>"; };
+		99F5C00F2698F1DB007D547F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F5C0142698F1DB007D547F /* bowlingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bowlingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99F5C0182698F1DB007D547F /* bowlingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bowlingUITests.swift; sourceTree = "<group>"; };
+		99F5C01A2698F1DB007D547F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F5C02C2698F3D8007D547F /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
+		99F5C02E2698F40E007D547F /* PinsKnokedDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsKnokedDown.swift; sourceTree = "<group>"; };
+		99F5C0422698F605007D547F /* ShotsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotsCollectionView.swift; sourceTree = "<group>"; };
+		99F5C0432698F605007D547F /* ShotsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotsCollectionViewCell.swift; sourceTree = "<group>"; };
+		99F5C0442698F605007D547F /* ShotsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotsCollectionViewCell.xib; sourceTree = "<group>"; };
+		99F5C0492698F8DE007D547F /* PlayerFramesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerFramesCollectionView.swift; sourceTree = "<group>"; };
+		99F5C04B2698FADA007D547F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		99F5C04F2698FB36007D547F /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		99F5C0512698FBFE007D547F /* PlayerFrameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerFrameCollectionViewCell.swift; sourceTree = "<group>"; };
+		99F5C0522698FBFE007D547F /* PlayerFrameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerFrameCollectionViewCell.xib; sourceTree = "<group>"; };
+		99F5C0552698FE68007D547F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99F5BFED2698F1D2007D547F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F5C0062698F1DB007D547F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F5C0112698F1DB007D547F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99B40B7A269B71CD00BDC487 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				99B40B7B269B71DD00BDC487 /* GameError.swift */,
+				99B40B7D269B71EE00BDC487 /* ShotError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		99F5BFE72698F1D1007D547F = {
+			isa = PBXGroup;
+			children = (
+				99F5BFF22698F1D3007D547F /* bowling */,
+				99F5C00C2698F1DB007D547F /* bowlingTests */,
+				99F5C0172698F1DB007D547F /* bowlingUITests */,
+				99F5BFF12698F1D3007D547F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99F5BFF12698F1D3007D547F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99F5BFF02698F1D3007D547F /* bowling.app */,
+				99F5C0092698F1DB007D547F /* bowlingTests.xctest */,
+				99F5C0142698F1DB007D547F /* bowlingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99F5BFF22698F1D3007D547F /* bowling */ = {
+			isa = PBXGroup;
+			children = (
+				99F5C0282698F272007D547F /* Game */,
+				99F5C0262698F245007D547F /* Utils */,
+				99F5C0272698F261007D547F /* Game View */,
+				99F5BFFF2698F1DB007D547F /* Assets.xcassets */,
+				99F5C0012698F1DB007D547F /* LaunchScreen.storyboard */,
+				99F5C0042698F1DB007D547F /* Info.plist */,
+				99F5BFFC2698F1D3007D547F /* bowling.xcdatamodeld */,
+			);
+			path = bowling;
+			sourceTree = "<group>";
+		};
+		99F5C00C2698F1DB007D547F /* bowlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				99F5C00D2698F1DB007D547F /* bowlingTests.swift */,
+				99F5C00F2698F1DB007D547F /* Info.plist */,
+			);
+			path = bowlingTests;
+			sourceTree = "<group>";
+		};
+		99F5C0172698F1DB007D547F /* bowlingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99F5C0182698F1DB007D547F /* bowlingUITests.swift */,
+				99F5C01A2698F1DB007D547F /* Info.plist */,
+			);
+			path = bowlingUITests;
+			sourceTree = "<group>";
+		};
+		99F5C0262698F245007D547F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				99F5BFF32698F1D3007D547F /* AppDelegate.swift */,
+				99F5BFF52698F1D3007D547F /* SceneDelegate.swift */,
+				99F5BFF92698F1D3007D547F /* Main.storyboard */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		99F5C0272698F261007D547F /* Game View */ = {
+			isa = PBXGroup;
+			children = (
+				99F5C0482698F8B3007D547F /* Player Frames Collection View */,
+				99F5C0292698F33F007D547F /* Shots Collection View */,
+				99F5BFF72698F1D3007D547F /* GameViewController.swift */,
+				99B40B78269B541300BDC487 /* GameView+CollectionView.swift */,
+				99293A57269BC688007BC601 /* GameViewModel.swift */,
+			);
+			path = "Game View";
+			sourceTree = "<group>";
+		};
+		99F5C0282698F272007D547F /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				99B40B7A269B71CD00BDC487 /* Error */,
+				99F5C02C2698F3D8007D547F /* Shot.swift */,
+				99F5C02E2698F40E007D547F /* PinsKnokedDown.swift */,
+				99F5C04B2698FADA007D547F /* Player.swift */,
+				99F5C04F2698FB36007D547F /* Frame.swift */,
+				99F5C0552698FE68007D547F /* Game.swift */,
+				99293A59269BDB8B007BC601 /* GameDelegate.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		99F5C0292698F33F007D547F /* Shots Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				99F5C0422698F605007D547F /* ShotsCollectionView.swift */,
+				99F5C0432698F605007D547F /* ShotsCollectionViewCell.swift */,
+				99F5C0442698F605007D547F /* ShotsCollectionViewCell.xib */,
+			);
+			path = "Shots Collection View";
+			sourceTree = "<group>";
+		};
+		99F5C0482698F8B3007D547F /* Player Frames Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				99F5C0492698F8DE007D547F /* PlayerFramesCollectionView.swift */,
+				99F5C0512698FBFE007D547F /* PlayerFrameCollectionViewCell.swift */,
+				99F5C0522698FBFE007D547F /* PlayerFrameCollectionViewCell.xib */,
+				99B40B7F269BB87A00BDC487 /* PlayerFrameViewModel.swift */,
+			);
+			path = "Player Frames Collection View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99F5BFEF2698F1D2007D547F /* bowling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99F5C01D2698F1DB007D547F /* Build configuration list for PBXNativeTarget "bowling" */;
+			buildPhases = (
+				99F5BFEC2698F1D2007D547F /* Sources */,
+				99F5BFED2698F1D2007D547F /* Frameworks */,
+				99F5BFEE2698F1D2007D547F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bowling;
+			productName = bowling;
+			productReference = 99F5BFF02698F1D3007D547F /* bowling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99F5C0082698F1DB007D547F /* bowlingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99F5C0202698F1DB007D547F /* Build configuration list for PBXNativeTarget "bowlingTests" */;
+			buildPhases = (
+				99F5C0052698F1DB007D547F /* Sources */,
+				99F5C0062698F1DB007D547F /* Frameworks */,
+				99F5C0072698F1DB007D547F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99F5C00B2698F1DB007D547F /* PBXTargetDependency */,
+			);
+			name = bowlingTests;
+			productName = bowlingTests;
+			productReference = 99F5C0092698F1DB007D547F /* bowlingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99F5C0132698F1DB007D547F /* bowlingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99F5C0232698F1DB007D547F /* Build configuration list for PBXNativeTarget "bowlingUITests" */;
+			buildPhases = (
+				99F5C0102698F1DB007D547F /* Sources */,
+				99F5C0112698F1DB007D547F /* Frameworks */,
+				99F5C0122698F1DB007D547F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99F5C0162698F1DB007D547F /* PBXTargetDependency */,
+			);
+			name = bowlingUITests;
+			productName = bowlingUITests;
+			productReference = 99F5C0142698F1DB007D547F /* bowlingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99F5BFE82698F1D1007D547F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					99F5BFEF2698F1D2007D547F = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					99F5C0082698F1DB007D547F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 99F5BFEF2698F1D2007D547F;
+					};
+					99F5C0132698F1DB007D547F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 99F5BFEF2698F1D2007D547F;
+					};
+				};
+			};
+			buildConfigurationList = 99F5BFEB2698F1D1007D547F /* Build configuration list for PBXProject "bowling" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99F5BFE72698F1D1007D547F;
+			productRefGroup = 99F5BFF12698F1D3007D547F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99F5BFEF2698F1D2007D547F /* bowling */,
+				99F5C0082698F1DB007D547F /* bowlingTests */,
+				99F5C0132698F1DB007D547F /* bowlingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99F5BFEE2698F1D2007D547F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F5C0472698F605007D547F /* ShotsCollectionViewCell.xib in Resources */,
+				99F5C0032698F1DB007D547F /* LaunchScreen.storyboard in Resources */,
+				99F5C0542698FBFE007D547F /* PlayerFrameCollectionViewCell.xib in Resources */,
+				99F5C0002698F1DB007D547F /* Assets.xcassets in Resources */,
+				99F5BFFB2698F1D3007D547F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F5C0072698F1DB007D547F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F5C0122698F1DB007D547F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99F5BFEC2698F1D2007D547F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99293A58269BC688007BC601 /* GameViewModel.swift in Sources */,
+				99F5C0462698F605007D547F /* ShotsCollectionViewCell.swift in Sources */,
+				99B40B80269BB87A00BDC487 /* PlayerFrameViewModel.swift in Sources */,
+				99293A5A269BDB8B007BC601 /* GameDelegate.swift in Sources */,
+				99F5BFF82698F1D3007D547F /* GameViewController.swift in Sources */,
+				99F5C02F2698F40E007D547F /* PinsKnokedDown.swift in Sources */,
+				99F5C0452698F605007D547F /* ShotsCollectionView.swift in Sources */,
+				99F5BFF42698F1D3007D547F /* AppDelegate.swift in Sources */,
+				99B40B7E269B71EE00BDC487 /* ShotError.swift in Sources */,
+				99F5C02D2698F3D8007D547F /* Shot.swift in Sources */,
+				99F5BFFE2698F1D3007D547F /* bowling.xcdatamodeld in Sources */,
+				99F5C04A2698F8DE007D547F /* PlayerFramesCollectionView.swift in Sources */,
+				99F5C0562698FE69007D547F /* Game.swift in Sources */,
+				99F5C0502698FB36007D547F /* Frame.swift in Sources */,
+				99B40B79269B541300BDC487 /* GameView+CollectionView.swift in Sources */,
+				99F5C0532698FBFE007D547F /* PlayerFrameCollectionViewCell.swift in Sources */,
+				99F5C04C2698FADB007D547F /* Player.swift in Sources */,
+				99B40B7C269B71DD00BDC487 /* GameError.swift in Sources */,
+				99F5BFF62698F1D3007D547F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F5C0052698F1DB007D547F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F5C00E2698F1DB007D547F /* bowlingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99F5C0102698F1DB007D547F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F5C0192698F1DB007D547F /* bowlingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99F5C00B2698F1DB007D547F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99F5BFEF2698F1D2007D547F /* bowling */;
+			targetProxy = 99F5C00A2698F1DB007D547F /* PBXContainerItemProxy */;
+		};
+		99F5C0162698F1DB007D547F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99F5BFEF2698F1D2007D547F /* bowling */;
+			targetProxy = 99F5C0152698F1DB007D547F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99F5BFF92698F1D3007D547F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99F5BFFA2698F1D3007D547F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99F5C0012698F1DB007D547F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99F5C0022698F1DB007D547F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99F5C01B2698F1DB007D547F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99F5C01C2698F1DB007D547F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99F5C01E2698F1DB007D547F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = bowling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardflight.bowling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99F5C01F2698F1DB007D547F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = bowling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardflight.bowling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99F5C0212698F1DB007D547F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = bowlingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardflight.bowlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bowling.app/bowling";
+			};
+			name = Debug;
+		};
+		99F5C0222698F1DB007D547F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = bowlingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardflight.bowlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bowling.app/bowling";
+			};
+			name = Release;
+		};
+		99F5C0242698F1DB007D547F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = bowlingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardflight.bowlingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = bowling;
+			};
+			name = Debug;
+		};
+		99F5C0252698F1DB007D547F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z39T27P9LH;
+				INFOPLIST_FILE = bowlingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardflight.bowlingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = bowling;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99F5BFEB2698F1D1007D547F /* Build configuration list for PBXProject "bowling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99F5C01B2698F1DB007D547F /* Debug */,
+				99F5C01C2698F1DB007D547F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99F5C01D2698F1DB007D547F /* Build configuration list for PBXNativeTarget "bowling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99F5C01E2698F1DB007D547F /* Debug */,
+				99F5C01F2698F1DB007D547F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99F5C0202698F1DB007D547F /* Build configuration list for PBXNativeTarget "bowlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99F5C0212698F1DB007D547F /* Debug */,
+				99F5C0222698F1DB007D547F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99F5C0232698F1DB007D547F /* Build configuration list for PBXNativeTarget "bowlingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99F5C0242698F1DB007D547F /* Debug */,
+				99F5C0252698F1DB007D547F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		99F5BFFC2698F1D3007D547F /* bowling.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				99F5BFFD2698F1D3007D547F /* bowling.xcdatamodel */,
+			);
+			currentVersion = 99F5BFFD2698F1D3007D547F /* bowling.xcdatamodel */;
+			path = bowling.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 99F5BFE82698F1D1007D547F /* Project object */;
+}
